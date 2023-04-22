@@ -1,4 +1,4 @@
-package bank.project.bankmembership.common;
+package bank.project.bankmembership.common.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 public class BaseEntity {
 
     @CreatedDate
-    @Column(updatable = false)
+    @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
     @LastModifiedDate

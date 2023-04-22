@@ -1,4 +1,6 @@
 package bank.project.bankmembership.branch;
 
-public interface BranchRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BranchRepository extends JpaRepository<Branch, Long> {
 }

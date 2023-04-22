@@ -1,6 +1,6 @@
 package bank.project.bankmembership.acoount;
 
-import bank.project.bankmembership.common.BaseEntity;
+import bank.project.bankmembership.common.entity.BaseEntity;
 import bank.project.bankmembership.customer.Customer;
 import lombok.Getter;
 import lombok.Setter;
@@ -31,6 +31,4 @@ public class Account extends BaseEntity {
     @ManyToOne
     private Customer customer;
 
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 }

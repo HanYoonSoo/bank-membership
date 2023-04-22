@@ -20,3 +20,14 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
+
+logging:
+  level:
+    root: info
+    web: info
+    sql: error
+    org.hibernate: error
+    org.springframework: error
+    bank.project: info
+
+# springdoc 설정, actuator 설정 등등 추가하자
