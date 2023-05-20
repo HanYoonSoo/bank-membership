@@ -8,5 +8,7 @@ import lombok.RequiredArgsConstructor;
 public class CustomerNotFoundException extends CustomerException{
     public CustomerNotFoundException(Long id, String name) {
         super(id, name);
+
+
     }
 }
