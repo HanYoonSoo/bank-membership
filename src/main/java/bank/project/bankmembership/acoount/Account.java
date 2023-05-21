@@ -1,34 +1,29 @@
 package bank.project.bankmembership.acoount;
 
-import bank.project.bankmembership.common.entity.BaseEntity;
-import bank.project.bankmembership.customer.Customer;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import java.time.LocalDateTime;
+import bank.project.bankmembership.common.entity.BaseEntity;
 
 @Entity
 @Getter
 @Setter
 public class Account extends BaseEntity {
 
-    @Id
-    private String number;
+  @Id private String number;
 
-    private String type;
+  private String type;
 
-    private long balance;
+  private long balance;
 
-    private String password;
+  private String password;
 
-    private int employerId;
+  private int employerId;
 
-    private int branchId;
+  private int branchId;
 
-    @ManyToOne
-    private Customer customer;
-
+  private long customerId;
 }

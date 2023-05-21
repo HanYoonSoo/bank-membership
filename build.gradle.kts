@@ -1,11 +1,12 @@
 plugins {
     java
-    id("org.springframework.boot") version "2.7.9"
-    id("io.spring.dependency-management") version "1.0.15.RELEASE"
+    id("org.springframework.boot") version "3.0.5"
+    id("io.spring.dependency-management") version "1.1.0"
+    id("com.diffplug.spotless") version "6.18.0"
 }
 
 group = "bank.project"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 configurations {
@@ -14,6 +15,22 @@ configurations {
     }
 }
 
+spotless{
+    java{
+        removeUnusedImports()
+        googleJavaFormat()
+        importOrder(
+                "java",
+                "jakarta",
+                "lombok",
+                "org.springframework",
+                "",
+                "\\#",
+                "bank.project",
+                "\\#bank.project"
+        )
+    }
+}
 repositories {
     mavenCentral()
 }

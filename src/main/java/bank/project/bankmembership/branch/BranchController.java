@@ -1,4 +1,3 @@
 package bank.project.bankmembership.branch;
 
-public class BranchController {
-}
+public class BranchController {}

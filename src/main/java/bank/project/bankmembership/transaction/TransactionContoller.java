@@ -1,4 +1,3 @@
 package bank.project.bankmembership.transaction;
 
-public class TransactionContoller {
-}
+public class TransactionContoller {}
