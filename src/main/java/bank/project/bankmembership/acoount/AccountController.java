@@ -18,7 +18,7 @@ public class AccountController {
   private final AccountService accountService;
 
   @GetMapping("/accounts") // TODO: header -> customer_id
-  public AccountGetResponse getAccounts(@RequestParam Long id) { // /api/v1/accounts?id=00
+  public AccountGetResponse getAccounts(@RequestParam Long customerId) { // /api/v1/accounts?id=00
     return accountService.getAccounts(id);
   }
 }
