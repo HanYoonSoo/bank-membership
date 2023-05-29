@@ -11,10 +11,8 @@ import java.util.List;
 @ToString
 @Getter
 public class AccountGetResponse {
-  private List<Content> content = new ArrayList<>();
-
-  private String resultMsg;
-
-  private int resultCode;
-
+  private String number;
+  private Long balance;
+  private int branchId;
+  private Long customerId;
 }

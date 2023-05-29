@@ -26,4 +26,5 @@ public class Account extends BaseEntity {
   private int branchId;
 
   private long customerId;
+
 }
